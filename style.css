@@ -38,6 +38,7 @@ nav {
   height: 200px;
   display: flex;
   align-items: center;
+  
 }
 
 #carouselContent {
@@ -49,6 +50,7 @@ nav {
   height: 400px;
   border-radius: 5%;
   border-bottom: 3px solid black ;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #carouselContent > img {
@@ -60,6 +62,10 @@ nav {
   object-fit: contain;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+}
+
+#carouselContent > img:hover {
+  transform: scale(1.1);
 }
 
 .container {

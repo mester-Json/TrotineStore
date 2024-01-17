@@ -3,31 +3,145 @@ body {
 }
 
 nav {
-    background-color: black;
-    height: 200px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: black;
+  height: 150px;
+  width: 100%;
+  display: flex;
 }
 
 .Produit {
-    color: white;
-    margin-top: 3%;
-    margin-left: 70%;
-    text-decoration: none;
+  color: white;
+  margin-top: 3%;
+  margin-left: 75%;
+  text-decoration: none;
 }
 
 .Inscription {
-    color: white;
-    margin-top: 3%;
-    margin-left: 5%;
-    text-decoration: none;
+  color: white;
+  margin-top: 3%;
+  margin-left: 50px;
+  text-decoration: none;
 }
 
 .logo {
-    width: auto;
-    height: 200px;
+  width: auto;
+  height: 150px;
+} 
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+}
+
+
+.containertable {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border: 3px solid black;
+  border-radius: 50px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-left: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+#search {
+  margin-top: 20px;
+  margin-left: 800px;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+
+.search {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+.table  {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.tr1, .tr2, .tr3, .tr4, .tr5, .tr6  {
+  width: 1050px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 50PX;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 28px;
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.5s; 
+}
+
+.search:hover {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+  
+}
+
+.fa-magnifying-glass {
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.action,
+.suprimer {
+  width: 200px;
+  height: 50px;
+  margin-right: 200px;
+  background-color: black;
+  border: 3px solid black;
+  color: white;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 75px;
+  padding: 10px;
+  transition: transform 0.5s; 
+}
+
+.action:hover,
+.suprimer:hover {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+  
 }
 
 footer {
