@@ -89,7 +89,7 @@ nav {
   transition: transform 0.5s;
 }
 
-.imgcontainer:hover #img1, .imgcontainer:hover #img2, .imgcontainer:hover #img3 {
+.imgcontainer:hover {
   transform: scale(1.2);
 }
 
