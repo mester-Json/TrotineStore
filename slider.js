@@ -6,7 +6,7 @@ class Carrousel {
         this.indexActuel = 0;
         this.carouselImageElement = document.createElement('img');
         this.display();
-        setInterval(() => this.suivant(), 10000);
+        setInterval(() => this.suivant(), 1000);
     }
 
 
