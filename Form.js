@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     const passwordToggle = document.getElementById('Test1');
-    const passwordInput = document.getElementById('motdepasse'); // Correction de l'ID
+    const passwordInput = document.getElementById('motdepasse');
 
     passwordToggle.addEventListener('click', function () {
         if (passwordInput.type === 'password') {
