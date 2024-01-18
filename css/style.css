@@ -33,8 +33,6 @@ nav {
   text-decoration: none;
 }
 
-
-
 @keyframes changeColor {
   0% {
     border-color: red;
@@ -61,14 +59,12 @@ nav {
   transform: scale(1.1);
 }
 
-
 .carousel {
   margin: 0;
   width: 100%;
   height: 200px;
   display: flex;
   align-items: center;
-  
 }
 
 #carouselContent {
@@ -83,6 +79,7 @@ nav {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
 }
+
 #carouselContent > img {
   margin-top: 25px;
   width: auto;
@@ -91,7 +88,8 @@ nav {
   margin-right: 20px;
   object-fit: contain;
   transform: perspective(1000px) rotateX(30deg) rotateY(30deg);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   transition: transform 0.5s;
 }
 
@@ -215,11 +213,271 @@ footer {
   margin-right: 10px;
 }
 
-
 .cgv {
   margin-top: 30px;
-  margin-left:200px ;
+  margin-left: 200px;
   color: white;
   text-decoration: none;
   cursor: help;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-size: auto;
+    background-attachment: scroll;
+  }
+  nav{
+    height: 100px;
+  }
+  .Produit {
+    margin-left: 35%;
+  }
+  .Inscription {
+    margin-left: 10px;
+  }
+  .logo {
+    height: 80px;
+    width: auto;
+  }
+  .carousel {
+    height: 400px;
+  }
+
+  .carousel {
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #carouselContent {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    border-radius: 5%;
+    border-bottom: 3px solid black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+  }
+  
+  #carouselContent > img {
+    margin-top: 25px;
+    width: auto;
+    height: 40%;
+    margin-left: 20px;
+    margin-right: 20px;
+    object-fit: contain;
+    transform: perspective(1000px) rotateX(30deg) rotateY(30deg);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: transform 0.5s;
+  }
+  
+  #carouselContent > img:hover {
+    transform: scale(1.1);
+  }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 150px;
+  margin-top: 300px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#img1, #img2, #img3 {
+  border: 2px solid black;
+  border-radius: 25%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s;
+}
+
+.imgcontainer:hover {
+  transform: scale(1.2);
+  opacity: 0.8; 
+}
+
+.containerp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-size: auto;
+    background-attachment: scroll;
+  }
+  nav{
+    height: 100px;
+  }
+  .Produit {
+    margin-left: 20%;
+  }
+  .Inscription {
+    margin-left: 20px;
+  }
+  .logo {
+    height: 80px;
+    width: auto;
+  }
+  .carousel {
+    width: auto;
+    height: 400px;
+    
+  }
+  #carouselContent > img {
+    margin-top: 25px;
+    width: auto;
+    height: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: contain;
+    transform: perspective(1000px) rotateX(30deg) rotateY(30deg);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: transform 0.5s;
+  }
+  #carouselContent {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    border-radius: 5%;
+    border-bottom: 3px solid black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imgcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 200px;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+  
+  #img1, #img2, #img3 {
+    border: 2px solid black;
+    border-radius: 25%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+  }
+  
+  .imgcontainer:hover {
+    transform: scale(1.2);
+    opacity: 0.8; 
+  }
+  
+  .containerp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .test1, .test2, .test3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+  }
+  
+  .test1:hover, .test2:hover, .test3:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 200px;
+    width: auto;
+    color: white;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .logo-text {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fa-phone {
+    margin-right: 10px;
+  }
+  
+  .fa-envelope {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .cgv {
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+    cursor: help;
+  }
 }

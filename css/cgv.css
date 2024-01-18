@@ -136,3 +136,116 @@ footer {
     text-decoration: none;
     cursor: help;
   }
+
+  @media screen and (max-width: 1024px) {
+    body {
+      background-size: auto;
+      background-attachment: scroll;
+    }
+    nav{
+      height: 100px;
+    }
+    .logo {
+      height: 80px;
+      width: auto;
+    }
+    h1 {
+      color: white;
+      font-size: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+  .link{
+    color: white;
+    display: inline-block;
+    margin-top: 7%;
+    margin-left: 20px;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: help;
+  }
+  }
+
+  @media screen and (max-width: 425px) {
+    body {
+      background-size: auto;
+      background-attachment: scroll;
+    }
+    nav{
+      height: 150px;
+    }
+
+    .logo {
+      height: 80px;
+      width: auto;
+    }
+    h1 {
+      color: white;
+      font-size: 15px;
+      margin-left: 15px;
+      margin-right: 5px;
+      margin-top:5px;
+      text-align: center;
+    }
+
+  .link{
+    color: white;
+    margin-top: 20px;
+    margin-left: 15px;
+    text-decoration: none;
+    pointer-events: auto;
+    display: inline-block;
+    cursor: help;
+  }
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      height: 200px;
+      width: auto;
+      color: white;
+    }
+    
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      margin-left:auto;
+      margin-right: auto;
+    }
+    
+    .logo-text {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .fa-phone {
+      margin-right: 10px;
+    }
+    
+    .fa-envelope {
+      margin-left: 20px;
+      margin-right: 10px;
+    }
+    
+    .cgv {
+      margin-top: 10px;
+      margin-left:200px;
+      color: white;
+      text-decoration: none;
+      cursor: help;
+    }
+  }
