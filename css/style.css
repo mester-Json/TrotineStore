@@ -181,3 +181,12 @@ footer {
   margin-left: 20px;
   margin-right: 10px;
 }
+
+
+.cgv {
+  margin-top: 30px;
+  margin-left:200px ;
+  color: white;
+  text-decoration: none;
+  cursor: help;
+}
