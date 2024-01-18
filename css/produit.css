@@ -23,10 +23,32 @@ nav {
   text-decoration: none;
 }
 
+
+@keyframes changeColor {
+  0% {
+    border-color: red;
+  }
+  50% {
+    border-color: blue;
+  }
+  100% {
+    border-color: green;
+  }
+}
+
 .logo {
   width: auto;
-  height: 150px;
-} 
+  height: 120px;
+  margin-top: 10px;
+  margin-left: 20px;
+  animation:  changeColor 3s infinite;
+  border: 2px solid black;
+  transition: border-color 0.5s,  transform 0.5s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
 
 
 .carousel {

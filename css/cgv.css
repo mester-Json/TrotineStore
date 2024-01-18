@@ -11,11 +11,36 @@ nav {
   }
 
 
+
+
+  @keyframes changeColor {
+    0% {
+      border-color: red;
+    }
+    50% {
+      border-color: blue;
+    }
+    100% {
+      border-color: green;
+    }
+  }
+  
   .logo {
-    pointer-events: auto;
     width: auto;
-    height: 150px;
-  } 
+    height: 120px;
+    margin-top: 10px;
+    margin-left: 20px;
+    animation:  changeColor 3s infinite;
+    border: 2px solid black;
+    pointer-events: auto;
+    transition: border-color 0.5s,  transform 0.5s;
+  }
+  
+  .logo:hover {
+    pointer-events: auto;
+    transform: scale(1.1);
+  }
+  
 
   .link{
     color: white;
