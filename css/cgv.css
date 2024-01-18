@@ -1,17 +1,21 @@
 body {
     margin: 0;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav {
     background-color: black;
-    height: 150px;
+    height: 200px;
     width: 100%;
-    display: flex;
     pointer-events: none;
+    display: flex;
+    flex-direction: row;
   }
-
-
-
 
   @keyframes changeColor {
     0% {
@@ -25,6 +29,23 @@ nav {
     }
   }
   
+h1 {
+  color: white;
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  text-align: center;
+}
+
+  hr {
+    width: 85%;
+    border: 2px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .logo {
     width: auto;
     height: 120px;
@@ -44,17 +65,14 @@ nav {
 
   .link{
     color: white;
-    margin-top: 3%;
-    margin-left: 65px;
-    margin-right: 20px;
-    padding: 50px;
+    display: inline-block;
+    margin-top: 7%;
+    margin-left: 50px;
     text-decoration: none;
-    font-size: 20px;
-    block-size: 0;
     pointer-events: auto;
     cursor: help;
-    
   }
+
 
   .content {
     display: flex;
@@ -77,7 +95,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 200px;
+    height: 250px;
     width: auto;
     color: white;
   }

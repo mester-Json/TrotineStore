@@ -1,7 +1,13 @@
 body {
-    margin: 0%;
-  }
-  
+  margin: 0%;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
 nav {
     background-color: black;
     height: 150px;
@@ -115,7 +121,26 @@ input {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 20px;
+    
 }
+
+.fa-eye {
+  position: absolute; 
+  left: 850px;
+  top: 1030px; 
+  color: green;
+  transform: translateY(-50%) rotateY(0deg);
+  font-size: 25px;
+  cursor: crosshair;
+  transition: transform 0.5s;
+}
+
+.fa-eye:hover {
+  color: rgb(255, 0, 0);
+  transform: translateY(-50%) rotateY(180deg);
+}
+
+
 
 .submit {
     background-color: #000000;
@@ -132,6 +157,11 @@ input {
 }
 
 
+#NameError, #FirstNameError, #EmailError, #PhoneError, #AdressError, #CityError, #RueError, #PostalCodeError, #PasswordError, #ConfirmPasswordError  {
+    font-size: 12px;
+    color: red;
+    visibility: hidden;
+}
 
 footer {
     display: flex;

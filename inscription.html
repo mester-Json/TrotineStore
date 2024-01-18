@@ -29,48 +29,62 @@
         <div class="nom">
             <div class="left">
                 <label for="nom"> Nom </label>
-                <input type="text" class="nom" id="nom" name="nom" required>
+                <input type="text" class="nom" id="nom" name="nom">
+                <label for="" id="NameError"> Entrée un nom valide</label>
+
 
                 <label for="prenom"> Prénom </label>
-                <input type="text" class="prenom" id="prenom" name="prenom" required>
+                <input type="text" class="prenom" id="prenom" name="prenom">
+                <label for="" id="FirstNameError"> Entrée un prénom valide</label>
+
             </div>
             <div class="right">
                 <label for="mail"> Mail </label>
-                <input type="email" class="mail" id="mail" name="mail" required>
+                <input type="email" class="mail" id="mail" name="mail">
+                <label for="mail" id="EmailError"> Entrée un mail valide</label>
+
 
                 <label for="telephone"> Téléphone </label>
-                <input type="tel" class="telephone" id="telephone" name="telephone" required>
+                <input type="tel" class="telephone" id="telephone" name="telephone">
+                <label for="" id="PhoneError"> Entrée un numéro de tel valide</label>
+
             </div>
         </div>
         <hr>
-
         <h2> Adresse :</h2>
         <div class="Adresse">
             <div class="left">
                 <label for="adresse">Numéro de rue</label>
-                <input type="number" class="adresse" id="adresse" name="adresse" required>
+                <input type="text" class="adresse" id="adresse" name="adresse">
+                <label for="" id="AdressError"> Entrée un numero de rue valide </label>
+
 
                 <label for="rue">Nom rue </label>
-                <input type="text" class="rue" id="rue" name="rue" required>
+                <input type="text" class="rue" id="rue" name="rue">
+                <label for="" id="RueError"> Entrée un nom de rue valide </label>
+
 
                 <label for="motdepasse"> Mot de passe </label>
-                <input type="password" class="motdepasse" id="motdepasse" name="motdepasse" required>
-
+                <input type="password" class="motdepasse" id="motdepasse" name="motdepasse">
+                <label for="" id="PasswordError"> Entrée un mot de passe valide </label>
+                <i id="Test1" class="fa-solid fa-eye" onclick="togglePasswordVisibility('motdepasse')"></i>
             </div>
             <div class="right">
                 <label for="ville">Ville</label>
-                <input type="text" class="ville" id="ville" name="ville" required>
-
+                <input type="text" class="ville" id="ville" name="ville">
+                <label for="" id="CityError"> Entrée un nom de ville valide </label>
 
                 <label for="codepostal">Code postal </label>
-                <input type="number" class="codepostal" id="codepostal" name="codepostal" required>
+                <input type="number" class="codepostal" id="codepostal" name="codepostal">
+                <label for="" id="PostalCodeError"> Entrée un code postal valide </label>
 
                 <label for="confirme"> Confirmation</label>
-                <input type="password" class="confirme" id="confirme" name="confirme" required>
+                <input type="password" class="confirme" id="confirme" name="confirme">
+                <label for="" id="ConfirmPasswordError"> Entrée un mot de passe valide </label>
             </div>
         </div>
         <hr>
-        <input type="submit" class="submit" value="S'inscrire">
+        <input type="submit" id="submit" class="submit" value="S'inscrire">
     </form>
     <footer>
         <div class="footer">
@@ -90,6 +104,7 @@
             </div>
         </div>
     </footer>
+    <script src="Form.js"></script>
 </body>
 
 </html>
