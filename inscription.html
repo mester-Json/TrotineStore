@@ -22,46 +22,52 @@
     </header>
 
     <form id="container">
+
         <img class="logo2" src="./logo.svg" alt="">
         <h1>Inscription</h1>
         <hr>
-        <div class=" left">
-            <label for="nom"> Nom </label>
-            <input type="text" class="nom" id="nom" name="nom" required>
+        <div class="nom">
+            <div class="left">
+                <label for="nom"> Nom </label>
+                <input type="text" class="nom" id="nom" name="nom" required>
 
-            <label for="prenom"> Prénom </label>
-            <input type="text" class="prenom" id="prenom" name="prenom" required>
-        </div>
-        <div class="right">
-            <label for="mail"> Mail </label>
-            <input type="email" class="mail" id="mail" name="mail" required>
+                <label for="prenom"> Prénom </label>
+                <input type="text" class="prenom" id="prenom" name="prenom" required>
+            </div>
+            <div class="right">
+                <label for="mail"> Mail </label>
+                <input type="email" class="mail" id="mail" name="mail" required>
 
-            <label for="telephone"> Téléphone </label>
-            <input type="tel" class="telephone" id="telephone" name="telephone" required>
+                <label for="telephone"> Téléphone </label>
+                <input type="tel" class="telephone" id="telephone" name="telephone" required>
+            </div>
         </div>
         <hr>
+
         <h2> Adresse :</h2>
-        <div class="left">
-            <label for="adresse">Numéro de rue</label>
-            <input type="number" class="adresse" id="adresse" name="adresse" required>
+        <div class="Adresse">
+            <div class="left">
+                <label for="adresse">Numéro de rue</label>
+                <input type="number" class="adresse" id="adresse" name="adresse" required>
 
-            <label for="rue">Nom rue </label>
-            <input type="text" class="rue" id="rue" name="rue" required>
+                <label for="rue">Nom rue </label>
+                <input type="text" class="rue" id="rue" name="rue" required>
 
-        </div>
-        <div class="right">
-            <label for="codepostal">Code postal </label>
-            <input type="number" class="codepostal" id="codepostal" name="codepostal" required>
+                <label for="motdepasse"> Mot de passe </label>
+                <input type="password" class="motdepasse" id="motdepasse" name="motdepasse" required>
 
-            <label for="ville">Ville</label>
-            <input type="text" class="ville" id="ville" name="ville" required>
-        </div>
-        <div class="password-container">
-            <label for="motdepasse"> Mot de passe </label>
-            <input type="password" class="motdepasse" id="motdepasse" name="motdepasse" required>
+            </div>
+            <div class="right">
+                <label for="ville">Ville</label>
+                <input type="text" class="ville" id="ville" name="ville" required>
 
-            <label for="confirme"> Confirmation</label>
-            <input type="password" class="confirme" id="confirme" name="confirme" required>
+
+                <label for="codepostal">Code postal </label>
+                <input type="number" class="codepostal" id="codepostal" name="codepostal" required>
+
+                <label for="confirme"> Confirmation</label>
+                <input type="password" class="confirme" id="confirme" name="confirme" required>
+            </div>
         </div>
         <hr>
         <input type="submit" class="submit" value="S'inscrire">

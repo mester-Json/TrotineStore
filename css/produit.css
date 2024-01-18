@@ -133,21 +133,21 @@ h1 {
   font-weight: bold;
 }
 
-
-.table  {
+.table {
   margin-top: 20px;
   margin-bottom: 50px;
+  margin-left: 250px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  
+  justify-content: flex-end; 
 }
 
-.tr1, .tr2, .tr3, .tr4, .tr5, .tr6  {
+.tr1, .tr2, .tr3, .tr4, .tr5, .tr6 {
   width: 1050px;
   height: 50px;
   margin-top: 20px;
-  margin-left: 50PX;
+  margin-right: 50px; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -157,12 +157,7 @@ h1 {
   position: relative;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  transition: transform 0.5s; 
-}
+
 
 .search:hover {
   background-color: rgb(255, 255, 255);
@@ -181,7 +176,6 @@ h1 {
 .suprimer {
   width: 200px;
   height: 50px;
-  margin-right: 200px;
   background-color: black;
   border: 3px solid black;
   color: white;
@@ -189,8 +183,6 @@ h1 {
   font-size: 20px;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 75px;
-  padding: 10px;
   transition: transform 0.5s; 
 }
 
