@@ -146,14 +146,18 @@ input {
     background-color: #000000;
     color: #ffffff;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    border: 2px solid #000000;
+    border-radius: 20px;
     cursor: pointer;
-}
+    transition: transform 0.5s;
+  }
 
 .submit:hover {
     background-color: #ffffff;
+    margin-left: 5%;
+    width: 90%;
     color: #000000;
+    transform: scale(1.1);
 }
 
 
